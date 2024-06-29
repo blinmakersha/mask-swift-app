@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5152E9852C30637F0050ED2D /* HiBubble.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5152E9842C30637F0050ED2D /* HiBubble.rcproject */; };
+		5152E9872C3063E00050ED2D /* CoolGlasses.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5152E9862C3063E00050ED2D /* CoolGlasses.rcproject */; };
+		5152E9892C3063E80050ED2D /* BuilderHat.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5152E9882C3063E80050ED2D /* BuilderHat.rcproject */; };
 		51C305C52C2DED8100ABAA02 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C305C42C2DED8100ABAA02 /* FirebaseCrashlytics */; };
 		51EED8532C2DB854003F9E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EED8522C2DB854003F9E50 /* AppDelegate.swift */; };
 		51EED8552C2DB854003F9E50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EED8542C2DB854003F9E50 /* ContentView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5152E9842C30637F0050ED2D /* HiBubble.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = HiBubble.rcproject; sourceTree = "<group>"; };
+		5152E9862C3063E00050ED2D /* CoolGlasses.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = CoolGlasses.rcproject; sourceTree = "<group>"; };
+		5152E9882C3063E80050ED2D /* BuilderHat.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = BuilderHat.rcproject; sourceTree = "<group>"; };
 		51C305C12C2DE73000ABAA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		51EED84F2C2DB854003F9E50 /* myMaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EED8522C2DB854003F9E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 		51EED8512C2DB854003F9E50 /* myMaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				5152E9842C30637F0050ED2D /* HiBubble.rcproject */,
+				5152E9862C3063E00050ED2D /* CoolGlasses.rcproject */,
+				5152E9882C3063E80050ED2D /* BuilderHat.rcproject */,
 				51C305C12C2DE73000ABAA02 /* Info.plist */,
 				51EED8622C2DBBDA003F9E50 /* GoogleService-Info.plist */,
 				51EED8602C2DB970003F9E50 /* PartyGlasses.rcproject */,
@@ -181,8 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EED8552C2DB854003F9E50 /* ContentView.swift in Sources */,
+				5152E9852C30637F0050ED2D /* HiBubble.rcproject in Sources */,
+				5152E9892C3063E80050ED2D /* BuilderHat.rcproject in Sources */,
 				51EED8612C2DB970003F9E50 /* PartyGlasses.rcproject in Sources */,
 				51EED8532C2DB854003F9E50 /* AppDelegate.swift in Sources */,
+				5152E9872C3063E00050ED2D /* CoolGlasses.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
