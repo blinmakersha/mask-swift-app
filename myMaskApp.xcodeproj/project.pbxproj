@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51C305C52C2DED8100ABAA02 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51C305C42C2DED8100ABAA02 /* FirebaseCrashlytics */; };
 		51EED8532C2DB854003F9E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EED8522C2DB854003F9E50 /* AppDelegate.swift */; };
 		51EED8552C2DB854003F9E50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EED8542C2DB854003F9E50 /* ContentView.swift */; };
 		51EED8572C2DB855003F9E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EED8562C2DB855003F9E50 /* Assets.xcassets */; };
 		51EED85A2C2DB855003F9E50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EED8592C2DB855003F9E50 /* Preview Assets.xcassets */; };
+		51EED8612C2DB970003F9E50 /* PartyGlasses.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 51EED8602C2DB970003F9E50 /* PartyGlasses.rcproject */; };
+		51EED8632C2DBBDA003F9E50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51EED8622C2DBBDA003F9E50 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51C305C12C2DE73000ABAA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		51EED84F2C2DB854003F9E50 /* myMaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EED8522C2DB854003F9E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51EED8542C2DB854003F9E50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51EED8562C2DB855003F9E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51EED8592C2DB855003F9E50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51EED8602C2DB970003F9E50 /* PartyGlasses.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = PartyGlasses.rcproject; sourceTree = "<group>"; };
+		51EED8622C2DBBDA003F9E50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C305C52C2DED8100ABAA02 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +58,9 @@
 		51EED8512C2DB854003F9E50 /* myMaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				51C305C12C2DE73000ABAA02 /* Info.plist */,
+				51EED8622C2DBBDA003F9E50 /* GoogleService-Info.plist */,
+				51EED8602C2DB970003F9E50 /* PartyGlasses.rcproject */,
 				51EED8522C2DB854003F9E50 /* AppDelegate.swift */,
 				51EED8542C2DB854003F9E50 /* ContentView.swift */,
 				51EED8562C2DB855003F9E50 /* Assets.xcassets */,
@@ -77,12 +87,16 @@
 				51EED84B2C2DB854003F9E50 /* Sources */,
 				51EED84C2C2DB854003F9E50 /* Frameworks */,
 				51EED84D2C2DB854003F9E50 /* Resources */,
+				51C305C22C2DE93300ABAA02 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = myMaskApp;
+			packageProductDependencies = (
+				51C305C42C2DED8100ABAA02 /* FirebaseCrashlytics */,
+			);
 			productName = myMaskApp;
 			productReference = 51EED84F2C2DB854003F9E50 /* myMaskApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 51EED8462C2DB854003F9E50;
+			packageReferences = (
+				51C305C32C2DED8100ABAA02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 51EED8502C2DB854003F9E50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,10 +144,36 @@
 			files = (
 				51EED85A2C2DB855003F9E50 /* Preview Assets.xcassets in Resources */,
 				51EED8572C2DB855003F9E50 /* Assets.xcassets in Resources */,
+				51EED8632C2DBBDA003F9E50 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51C305C22C2DE93300ABAA02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51EED84B2C2DB854003F9E50 /* Sources */ = {
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EED8552C2DB854003F9E50 /* ContentView.swift in Sources */,
+				51EED8612C2DB970003F9E50 /* PartyGlasses.rcproject in Sources */,
 				51EED8532C2DB854003F9E50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +315,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"myMaskApp/Preview Content\"";
 				DEVELOPMENT_TEAM = FZKGRP9854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +333,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSApplicationCrashOnExceptions = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = blinmakersha.myMaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -306,6 +354,7 @@
 				DEVELOPMENT_TEAM = FZKGRP9854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,6 +367,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSApplicationCrashOnExceptions = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = blinmakersha.myMaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -348,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51C305C32C2DED8100ABAA02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51C305C42C2DED8100ABAA02 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C305C32C2DED8100ABAA02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51EED8472C2DB854003F9E50 /* Project object */;
 }
