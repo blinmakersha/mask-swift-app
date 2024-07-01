@@ -63,5 +63,9 @@ Mask App is licensed under the GNU General Public License. For more details, see
 
 ---
 
-
-This README template provides a comprehensive overview of Mask App, highlighting its key features, getting started guide, usage instructions, contribution guidelines, and licensing information. Feel free to customize it further to suit your project's needs.
+## Goals 🎯
+- [x] create app with camera
+- [x] add different 3D masks
+- [ ] add function to take a photo
+- [ ] enable users to create their own masks
+- [ ] integrate with popular social networks for direct publishing
