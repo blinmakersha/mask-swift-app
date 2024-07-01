@@ -63,7 +63,7 @@ Mask App is licensed under the GNU General Public License. For more details, see
 
 ---
 
-## Goals 🎯
+## Future plans 🎯
 - [x] create app with camera
 - [x] add different 3D masks
 - [ ] add function to take a photo
