@@ -14,6 +14,9 @@ enum FaceMaskType: CaseIterable {
     case coolGlasses
     case hiBubble
     case builderHat
+    case dippersCap
+    case heartGlasses
+    case marioHat
 
     var modelName: String {
         switch self {
@@ -25,6 +28,12 @@ enum FaceMaskType: CaseIterable {
             return "HiBubble"
         case.builderHat:
             return "BuilderHat"
+        case.dippersCap:
+            return "DippersCap"
+        case.heartGlasses:
+            return "HeartGlasses"
+        case.marioHat:
+            return "MarioHat"
         }
     }
 }
@@ -109,6 +118,24 @@ struct ARViewContainer: UIViewRepresentable {
         }
         if maskType?.modelName == "BuilderHat" {
             if let faceScene = try? BuilderHat.loadScene() {
+                uiView.scene.anchors.removeAll()
+                uiView.scene.anchors.append(faceScene)
+            }
+        }
+        if maskType?.modelName == "DippersCap" {
+            if let faceScene = try? DippersCap.loadScene() {
+                uiView.scene.anchors.removeAll()
+                uiView.scene.anchors.append(faceScene)
+            }
+        }
+        if maskType?.modelName == "HeartGlasses" {
+            if let faceScene = try? HeartGlasses.loadScene() {
+                uiView.scene.anchors.removeAll()
+                uiView.scene.anchors.append(faceScene)
+            }
+        }
+        if maskType?.modelName == "MarioHat" {
+            if let faceScene = try? MarioHat.loadScene() {
                 uiView.scene.anchors.removeAll()
                 uiView.scene.anchors.append(faceScene)
             }
