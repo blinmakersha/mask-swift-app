@@ -97,6 +97,7 @@
 				51EED84C2C2DB854003F9E50 /* Frameworks */,
 				51EED84D2C2DB854003F9E50 /* Resources */,
 				51C305C22C2DE93300ABAA02 /* ShellScript */,
+				5152E98A2C3327130050ED2D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -160,8 +161,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5152E98A2C3327130050ED2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		51C305C22C2DE93300ABAA02 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -331,6 +352,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"myMaskApp/Preview Content\"";
 				DEVELOPMENT_TEAM = FZKGRP9854;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -365,6 +387,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"myMaskApp/Preview Content\"";
 				DEVELOPMENT_TEAM = FZKGRP9854;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
