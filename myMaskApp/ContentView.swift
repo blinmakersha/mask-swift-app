@@ -9,13 +9,12 @@ import SwiftUI
 import RealityKit
 import ARKit
 
-
 enum FaceMaskType: CaseIterable {
     case partyGlasses
     case coolGlasses
     case hiBubble
     case builderHat
-    
+
     var modelName: String {
         switch self {
         case.coolGlasses:
@@ -30,8 +29,7 @@ enum FaceMaskType: CaseIterable {
     }
 }
 
-
-struct ContentView : View {
+struct ContentView: View {
     @State private var isPresented: Bool = false
     @State private var selectedMaskType: FaceMaskType?
     var body: some View {
@@ -49,21 +47,21 @@ struct ContentView : View {
             Color.clear.edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer(minLength: 200)
-                
+
                 HStack(alignment: .center) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 20) {
                             ForEach(FaceMaskType.allCases, id: \.self) { maskType in
                                 Button(action: {
                                     self.selectedMaskType = maskType
-                                }) {
+                                }, label: {
                                     Image(maskType.modelName)
                                        .resizable()
-                                       .aspectRatio(contentMode:.fit)
+                                       .aspectRatio(contentMode: .fit)
                                        .frame(width: 80, height: 80, alignment: .center)
                                        .clipShape(Circle())
                                        .padding(15)
-                                }
+                                })
                             }
                         }
                     }
@@ -75,8 +73,7 @@ struct ContentView : View {
                 }
             }
         }}
-    
-    
+
 }
 
 struct ARViewContainer: UIViewRepresentable {
@@ -90,7 +87,7 @@ struct ARViewContainer: UIViewRepresentable {
 
         return arView
     }
-    
+
     func updateUIView(_ uiView: ARView, context: Context) {
         if maskType?.modelName == "PartyGlasses" {
             if let faceScene = try? PartyGlasses.loadFace() {
@@ -117,11 +114,11 @@ struct ARViewContainer: UIViewRepresentable {
             }
         }
     }
-    
+
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
